@@ -1,0 +1,57 @@
+Arguments: 
+  /home/kevin/.asdf/installs/nodejs/9.2.1/bin/node /home/kevin/.asdf/installs/nodejs/9.2.1/.npm/bin/yarn add --dev --exact react-native-typescript-transformer
+
+PATH: 
+  /home/kevin/.asdf/shims:/home/kevin/.asdf/bin:.git/safe/../../bin:/home/kevin/.bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  9.2.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@kjrocker%2fcore: Not found
+      at Request.params.callback [as _callback] (/home/kevin/.asdf/installs/nodejs/9.2.1/.npm/lib/node_modules/yarn/lib/cli.js:61073:18)
+      at Request.self.callback (/home/kevin/.asdf/installs/nodejs/9.2.1/.npm/lib/node_modules/yarn/lib/cli.js:120166:22)
+      at Request.emit (events.js:159:13)
+      at Request.<anonymous> (/home/kevin/.asdf/installs/nodejs/9.2.1/.npm/lib/node_modules/yarn/lib/cli.js:121138:10)
+      at Request.emit (events.js:159:13)
+      at IncomingMessage.<anonymous> (/home/kevin/.asdf/installs/nodejs/9.2.1/.npm/lib/node_modules/yarn/lib/cli.js:121060:12)
+      at Object.onceWrapper (events.js:254:19)
+      at IncomingMessage.emit (events.js:164:20)
+      at endReadableNT (_stream_readable.js:1054:12)
+      at _combinedTickCallback (internal/process/next_tick.js:138:11)
+
+npm manifest: 
+  {
+    "name": "empty-project-template",
+    "main": "node_modules/expo/AppEntry.js",
+    "private": true,
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "^30.0.1",
+      "react": "16.3.1",
+      "@kjrocker/core": "1.0.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz"
+    },
+    "devDependencies": {
+      "@types/react": "^16.4.14",
+      "@types/react-native": "^0.57.0",
+      "typescript": "^3.0.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

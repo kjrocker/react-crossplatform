@@ -1,22 +1,12 @@
 # Lerna + Project References
 
-This is a "bare minimum" repo that shows one way to configure TypeScript Project References with lerna. There are a lot of different ways you can set things up and this isn't intended to be authoratitive guidance or exclusionary of other ways that might work better in your project.
+This is a demo of how resources can be shared between a web and native application that uses Typescript and Lerna for rapid development and a good overall experience.
 
 # Setting up this repo
 
-```
-> git clone https://github.com/RyanCavanaugh/learn-a.git
-> cd learn-a
-> npm install
-> lerna bootstrap
-> tsc -b packages
-```
-
-Note that you'll need a 3.0 version of `tsc` (currently available at `npm install -g typescript@next`).
-
 ### General Structure
 
-As with a normal lerna repo, there's a `packages` folder. Inside we have three creatively named packages `web`, `native`, and `core`.
+Under our `packages` folder, we have three packages. The first, `core`, includes all our pure JS shared code and behavior (services, higher order components, etc). The `web` and `native` packages use these shared behaviors to create a web and native app, respectively.
 
 ```
 packages/
@@ -26,16 +16,15 @@ packages/
   | tsconfig.json
   | src/
   | | (typescript files)
-  | lib/
-  | | (javascript files)
-  | | (.d.ts files)
 | native/
   | (same as web)
 | core/
   | (same as web)
 ```
 
-Let's review each file in the repo and explain what's going on
+Because one of these is a pure typescript library, one is a web app powered by Parcel, and one is react-native powered by Expo, every package is structured a little differently.
+
+Generally, however, each provides a `yarn start` command that runs the project in watch mode. Both `web` and `native` will pick up on changes to `core` if all the packages are running simultaneously.
 
 #### `tsconfig.settings.json`
 
