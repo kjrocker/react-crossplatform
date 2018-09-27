@@ -1,0 +1,23 @@
+{
+  "name": "@kjrocker/core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "tsc -b .",
+    "start": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "recompose": "^0.30.0",
+    "ramda": "^0.25.0",
+    "react": "^16.5.2"
+  },
+  "devDependencies": {
+    "typescript": "^3.0.3"
+  }
+}

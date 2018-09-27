@@ -1,0 +1,60 @@
+Arguments: 
+  /home/kevin/.asdf/installs/nodejs/8.7.0/bin/node /home/kevin/.asdf/installs/nodejs/8.7.0/.npm/bin/yarn
+
+PATH: 
+  /home/kevin/.asdf/shims:/home/kevin/.asdf/bin:.git/safe/../../bin:/home/kevin/.bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  8.7.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "@kjrocker/web",
+    "version": "1.0.0",
+    "description": "",
+    "main": "lib/index.js",
+    "typings": "lib/index.d.ts",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start:dev": "webpack-dev-server",
+      "prepublishOnly": "tsc -b ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@kjrocker/core": "1.0.0",
+      "react": "^16.5.2",
+      "react-dom": "^16.5.2"
+    },
+    "devDependencies": {
+      "typescript": "^3.0.3",
+      "webpack-dev-server": "^3.1.9",
+      "webpack-cli": "^3.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@kjrocker%2fcore: Not found
+      at Request.params.callback [as _callback] (/home/kevin/.asdf/installs/nodejs/8.7.0/.npm/lib/node_modules/yarn/lib/cli.js:62098:18)
+      at Request.self.callback (/home/kevin/.asdf/installs/nodejs/8.7.0/.npm/lib/node_modules/yarn/lib/cli.js:123085:22)
+      at emitTwo (events.js:125:13)
+      at Request.emit (events.js:213:7)
+      at Request.<anonymous> (/home/kevin/.asdf/installs/nodejs/8.7.0/.npm/lib/node_modules/yarn/lib/cli.js:124068:10)
+      at emitOne (events.js:115:13)
+      at Request.emit (events.js:210:7)
+      at IncomingMessage.<anonymous> (/home/kevin/.asdf/installs/nodejs/8.7.0/.npm/lib/node_modules/yarn/lib/cli.js:123988:12)
+      at Object.onceWrapper (events.js:314:30)
+      at emitNone (events.js:110:20)

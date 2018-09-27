@@ -1,0 +1,4 @@
+{
+  "files": [],
+  "references": [{ "path": "web" }, { "path": "native" }, { "path": "core" }]
+}
