@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "start": "parcel src/index.html",
     "prepublishOnly": "tsc -b ."
   },
@@ -17,6 +18,23 @@
   },
   "devDependencies": {
     "typescript": "^3.0.3",
-    "parcel-bundler": "^1.10.0"
+    "parcel-bundler": "^1.10.0",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.2",
+    "enzyme-adapter-react-16": "^1.5.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/?(*.)+(spec|test).ts?(x)"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>setupTests.js"
   }
 }

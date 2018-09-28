@@ -6,7 +6,7 @@ describe('the application', () => {
     expect(true).toBe(true);
   });
 
-  it('has tests involving components', () => {
+  it('has tests that include components', () => {
     shallow(<div />);
   });
 });
