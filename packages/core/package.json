@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "prepublishOnly": "tsc -b .",
     "start": "tsc --watch",
+    "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watch"
   },

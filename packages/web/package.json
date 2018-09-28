@@ -6,7 +6,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "start": "parcel src/index.html",
-    "prepublishOnly": "tsc -b ."
+    "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
@@ -20,8 +20,7 @@
     "typescript": "^3.0.3",
     "parcel-bundler": "^1.10.0",
     "jest": "^23.6.0",
-    "ts-jest": "^23.10.2",
-    "enzyme-adapter-react-16": "^1.5.0"
+    "ts-jest": "^23.10.2"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -34,7 +33,6 @@
     },
     "testMatch": [
       "**/?(*.)+(spec|test).ts?(x)"
-    ],
-    "setupTestFrameworkScriptFile": "<rootDir>setupTests.js"
+    ]
   }
 }
