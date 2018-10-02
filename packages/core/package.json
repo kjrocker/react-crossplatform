@@ -26,6 +26,17 @@
     "react-dom": "^16.5.2"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>setupTests.js"
+    "setupTestFrameworkScriptFile": "<rootDir>setupTests.js",
+    "testMatch": [
+      "**/?(*.)+(spec|test).ts?(x)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    }
   }
 }
