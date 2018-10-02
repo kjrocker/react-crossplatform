@@ -114,21 +114,9 @@ Because we build to `lib`, we need to set `main` to the `.js` file there _and_ `
 
 In `scripts`, we use the local copy of `tsc` (listed here as a dev dependency) to run a _build mode_ compilation on the project. This will ensure that the `lib` folder is always built before `npm publish`, and blocks any publishes that try to push non-compiling code.
 
-#### `packages/native/.npmignore` / `packages/native/.gitignore`
+### Testing
 
-_.gitignore_
-
-```
-lib/
-```
-
-_.npmignore_
-
-```
-# Empty, but needs to exist
-```
-
-The `.gitignore` stops us from checking in build outputs, which is generally a good idea. By default, `npm` won't publish files that are ignored by `git`, so we need a separate `.npmignore` file so that the `lib` folder still gets published!
+All three modules ship with a `test` and `test:watch` command to manage their jest configurations. Enzyme is included in `core` only, while `web` and `native` just use `react-test-renderer`. This is because 1) Enzyme is a bitch to get running with Expo and 2) If I can't get it in both `web` AND `native`, then I don't want it in either of them to start with.
 
 # Workflow
 
