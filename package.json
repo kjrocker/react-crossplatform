@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "init": "yarn && lerna bootstrap",
+    "test": "lerna exec yarn test"
+  },
   "devDependencies": {
     "@types/ramda": "^0.25.38",
     "@types/react": "^16.4.14",
