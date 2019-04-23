@@ -1,0 +1,18 @@
+service: aws-nodejs
+provider:
+  name: aws
+  runtime: nodejs8.10
+functions:
+  first:
+    handler: src/index.http
+    events:
+      - http:
+          path: /
+          method: get
+package:
+  exclude:
+    - node_modules/**/*
+  include: src/**/*
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline

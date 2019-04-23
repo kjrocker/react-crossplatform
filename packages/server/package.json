@@ -1,0 +1,38 @@
+{
+  "name": "@kjrocker/server",
+  "version": "1.0.0",
+  "description": "Node Server",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "tsc",
+    "start": "nodemon --watch 'src/**/*' -e ts --exec 'ts-node' ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "Kevin Rocker",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "@kjrocker/core": "*"
+  },
+  "devDependencies": {
+    "ts-node": "^8.1.0",
+    "nodemon": "^1.18.11",
+    "typescript": "^3.4.3",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.2"
+  },
+  "jest": {
+    "testMatch": [
+      "**/?(*.)+(spec|test).ts?(x)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    }
+  }
+}

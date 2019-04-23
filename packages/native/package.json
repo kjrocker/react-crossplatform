@@ -20,7 +20,7 @@
   "devDependencies": {
     "@types/react": "^16.4.14",
     "@types/react-native": "^0.57.0",
-    "typescript": "^3.0.3",
+    "typescript": "^3.4.3",
     "jest": "^23.6.0",
     "jest-expo": "^30.0.0",
     "ts-jest": "^23.10.2",
