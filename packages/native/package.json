@@ -14,7 +14,7 @@
   "dependencies": {
     "expo": "^30.0.1",
     "react": "^16.5.2",
-    "@kjrocker/core": "1.0.0",
+    "@kjrocker/core": "*",
     "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz"
   },
   "devDependencies": {

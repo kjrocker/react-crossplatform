@@ -38,3 +38,13 @@ Because one of these is a pure typescript library, one is a web app powered by P
 Generally, however, each provides a `npm start` command that runs the project in watch mode. If you're running `core` in watch mode, changes to it will be detected by any other packages that are also running in watch mode.
 
 Each package also provides `npm test`, `npm run test:watch`, and `npm run build`. The `build` command will always produce build artifacts in the `dist` directory of the package. Building the native package will require an Expo account.
+
+### Ports
+
+Three of the five packages open ports when they're running.
+
+- `web` uses port 1234
+- `serverless` uses port 3000
+- `server` uses port 3001
+
+Obviously, this is for development only. Don't host every part of your application on the same machine in production!
