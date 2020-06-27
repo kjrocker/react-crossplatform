@@ -1,5 +1,6 @@
 {
   "name": "empty-project-template",
+  "version": "0.1.0",
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "scripts": {
@@ -12,10 +13,10 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "expo": "^30.0.1",
-    "react": "^16.5.2",
-    "@kjrocker/core": "*",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz"
+    "expo": "36.0.1",
+    "react": "16.13.1",
+    "react-native": "0.62.2",
+    "@kjrocker/core": "*"
   },
   "devDependencies": {
     "@types/react": "^16.4.14",
