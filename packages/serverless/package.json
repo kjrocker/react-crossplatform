@@ -15,13 +15,13 @@
     "@kjrocker/core": "*"
   },
   "devDependencies": {
-    "serverless-google-cloudfunctions": "*",
-    "serverless": "^1.40.0",
-    "serverless-offline": "^4.9.4",
-    "serverless-plugin-typescript": "^1.1.7",
-    "typescript": "^3.4.3",
-    "jest": "^23.6.0",
-    "ts-jest": "^23.10.2"
+    "serverless": "1.74.0",
+    "serverless-offline": "6.4.0",
+    "serverless-google-cloudfunctions": "3.1.0",
+    "serverless-plugin-typescript": "1.1.9",
+    "typescript": "3.9.5",
+    "jest": "26.1.0",
+    "ts-jest": "26.1.1"
   },
   "jest": {
     "testMatch": [
