@@ -13,15 +13,15 @@
   "author": "Kevin Rocker",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "4.17.1",
     "@kjrocker/core": "*"
   },
   "devDependencies": {
-    "ts-node": "^8.1.0",
-    "nodemon": "^1.18.11",
-    "typescript": "^3.4.3",
-    "jest": "^23.6.0",
-    "ts-jest": "^23.10.2"
+    "ts-node": "8.10.2",
+    "nodemon": "2.0.4",
+    "typescript": "3.9.5",
+    "jest": "26.1.0",
+    "ts-jest": "26.1.1"
   },
   "jest": {
     "testMatch": [

@@ -14,16 +14,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "recompose": "^0.30.0",
-    "ramda": "^0.25.0",
-    "react": "^16.5.2"
+    "ramda": "0.27.0",
+    "react": "16.13.1"
   },
   "devDependencies": {
-    "typescript": "^3.4.3",
-    "jest": "^23.6.0",
-    "ts-jest": "^23.10.2",
-    "enzyme-adapter-react-16": "^1.5.0",
-    "react-dom": "^16.5.2"
+    "typescript": "3.9.5",
+    "jest": "26.1.0",
+    "ts-jest": "26.1.1",
+    "enzyme-adapter-react-16": "1.15.2",
+    "react-dom": "16.13.1"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>setupTests.js",
